@@ -5,3 +5,8 @@ nav {
     margin: .5em auto;
     background-color: rgb(76, 209, 136);
 }
+img {
+    width: 35%;
+    object-fit: contain;
+    padding: 5em;
+}
