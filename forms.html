@@ -24,8 +24,10 @@
     <main>
         <h2>Please contact us</h2>
             <p>Either submit a comment or reach us at our email.</p>
-            <a href="Teastop@example.email">Teastop@example.email</a>
-
+            <!--href mailto adds link to email address-->
+            <p>Email:<a href="mailto:Teastop@mail.com">Teastop@mail.com</a></p>
+            <!--href tel adds link to phone number-->
+            <p>Phone:<a href="tel:098-765-4321">098-765-4321</a></p>
             <br>
 
             <br>
@@ -39,9 +41,14 @@
 
              <br> <!-- adds a line break-->
 
+             <label for="subject">Subject:</label>
+             <input type="text" id="subject" name="subject" placeholder="Enter your subject">
+
+             <br>
+
                 <!--Textarea for additional comments-->
                 <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter comment here"></textarea>
 
                 <br>
 
@@ -55,7 +62,7 @@
             <!--End of the form element-->
     </main>
     <footer>
-        <p>&copy; Samuel Iannazzo |
+        <p>&copy; Tea-stop 2025 |
             <a href="https://github.com/samian96">github.com/samian96</a>
         </p> 
     </footer>
