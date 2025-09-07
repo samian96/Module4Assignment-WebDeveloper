@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="shortcut icon" href="images/teafavicon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <nav>
-        <a href="index.html">Home Page</a>
-        <a href="tables.html">Store Page</a>
-        <a href="forms.html">Contact Us</a>
-        <a href="media.html">Media</a>
+        <a href="index.html">Home Page</a> |
+        <a href="tables.html">Store Page</a> |
+        <a href="forms.html">Contact Us</a> |
+        <a href="media.html">Media</a> |
+        <a href="news.html">News Letter</a> |
     </nav>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <h1>Become a Member of our Community </h1>
+    </header>
+    <main>
+        <h2>Please contact us</h2>
+            <p>Either submit a comment or reach us at our email.</p>
+            <a href="Teastop@example.email">Teastop@example.email</a>
+
+            <br>
+
+            <br>
+        
+            <!-- beginning of the form element-->
+         <form action="/submit" method="post">
+
+            <!-- Label and text input field-->
+             <label for="username">Username:</label>
+             <input type="text" id="username" name="username" placeholder="Enter your username">
+
+             <br> <!-- adds a line break-->
+
+                <!--Textarea for additional comments-->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+                <br>
+
+                 <!--Reset button to reset the form fields-->
+                <input type="reset" value="reset">
+
+         </form>
+            <!--End of the form element-->
+    </main>
     <footer>
         <p>&copy; Samuel Iannazzo |
             <a href="https://github.com/samian96">github.com/samian96</a>

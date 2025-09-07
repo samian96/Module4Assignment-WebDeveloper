@@ -1,19 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="shortcut icon" href="images/teafavicon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
     <nav>
-        <a href="index.html">Home Page</a>
-        <a href="tables.html">Store Page</a>
-        <a href="forms.html">Contact Us</a>
-        <a href="media.html">Media</a>
+        <a href="index.html">Home Page</a> |
+        <a href="tables.html">Store Page</a> |
+        <a href="forms.html">Contact Us</a> |
+        <a href="media.html">Media</a> |
+        <a href="news.html">News Letter</a> |
     </nav>    
 </head>
 <body>
     <header></header>
-    <main></main>
+    <main>
+         <!--Div container for building tables with fixed sizes-->
+        <div id="table1">
+            <!--table with fixed size-->
+            <table style="width: 1000px;">
+                <caption>Table with absolute width value</caption>
+                <!--Table header-->
+                <thead>
+                    <!--Table row for the header-->
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+                <!--Table body-->
+                <tbody>
+                    <!--Table row for the body-->
+                    <tr>
+                        <!--Table data cell-->
+                        <td>Data 1.1</td>
+                        <td>Data 1.2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 2.1</td>
+                        <td>Data 2.2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3.1</td>
+                        <td>Data 3.2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <!--Div container for building responsive tables-->
+        <div id="table2">
+            <!--Responsive table that adjusts its width based on its parent container's width-->
+            <table style="width: 100%;">
+            <caption>Responsive table using relative width values</caption>
+            <!--Table header-->
+            <thead>
+                <!--Table row for the header-->
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+            </thead>
+            <!--Table body-->
+            <tbody>
+                <!--table row for the body-->
+                <tr>
+                    <!--table data cell-->
+                    <td>Data 1.1</td>
+                    <td>Data 1.2</td>
+                </tr>
+                <tr>
+                    <td>Data 2.1</td>
+                    <td>Data 2.2</td>
+                </tr>
+                <tr>
+                    <td>Data 3.1</td>
+                    <td>Data 3.2</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <hr>
+        <!--Div container for building responsive table with merged cells-->
+        <div id="table3"></div>
+        <!--Responsive table with merged cells-->
+        <table style="width: 100%;">
+            <caption>Responsive table with merged cells</caption>
+            <!--Table header-->
+            <thead>
+                <!--Table row for the header-->
+                <tr>
+                    <th rowspan="2">Header 1</th> <!--Header cell that spans two rows vertically-->
+                    <th colspan="2">Header 2</th> <!--Header cell that spans two columns horizontally-->
+                </tr>
+                <tr>
+                    <th>Sub-header 1</th>
+                    <th>Sub-header 2</th>
+                </tr>
+            </thead>
+             <!--Table body-->
+            <tbody>
+                <!--table row for the body-->
+                <tr>
+                    <!--table data cell-->
+                    <td>Data 1.1</td>
+                    <td>Data 1.2</td>
+                </tr>
+                <tr>
+                    <td>Data 2.1</td>
+                    <td>Data 2.2</td>
+                </tr>
+                <tr>
+                    <td>Data 3.1</td>
+                    <td>Data 3.2</td>
+                </tr>
+            </tbody>
+         </table>
+    </main>
     <footer>
         <p>&copy; Samuel Iannazzo |
             <a href="https://github.com/samian96">github.com/samian96</a>
